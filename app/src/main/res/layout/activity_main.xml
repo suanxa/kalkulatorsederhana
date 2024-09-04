@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input1"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="8dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input2"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/input1"
+        android:layout_marginBottom="16dp"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:id="@+id/tombol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/input2"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#123456"
+            android:text="kali"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#123456"
+            android:text="bagi"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tambah"
+            android:backgroundTint="#123456"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#123456"
+            android:text="kurang"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tombol"
+        android:layout_marginBottom="16dp"
+        android:hint="Hasil"
+        android:textSize="18sp" />
+
+</RelativeLayout>
